@@ -1,0 +1,150 @@
+body{
+	background-color: #fff;
+}
+
+td{
+	font-weight: normal !important;
+	color: #666;
+}
+
+#breadcrumbs{
+    height: 4.32rem;
+    line-height: 4.32rem;
+    border-bottom: 1px solid #D2E9E4;
+    margin-bottom: 0.6rem;
+}
+
+.breadcrumb{
+    margin-left: 1.875rem;
+}
+
+.breadcrumb li span{
+    color: #999;
+    font-size: 1.5rem;
+}
+
+h3{
+	margin-left: 1.875rem;
+	font-size: 1.375rem;
+	color: #666;
+	margin-top: 2.6rem;
+	margin-bottom: 1.25rem;
+	display: block;
+}
+
+.breadcrumb>li+li:before{
+    font-size: 1.8rem;
+}
+
+.table{
+	border:1px solid #ccc;
+}
+.row_table_left{
+	padding: 0;
+	margin-top: 0.625rem;
+	margin-left: 1.875rem;
+}
+
+.row_table_right{
+	padding: 0;
+	margin-top: 0.625rem;
+	margin-left: -2px;
+}
+
+.table thead th{
+	background-color: #D2E9E4;
+	height: 3.75rem;
+	font-size: 1.375rem;
+	color: #666;
+	font-weight: normal !important;
+}
+
+.bsn_row{
+	height:20rem;
+}
+
+.bsn_td_left,.bsn_td_right{
+	height: 16.25rem;
+	width: 50%;
+}
+.bsn_td_left{
+	border-right: 1px solid #eee;
+}
+
+.bsn_data{
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: #f89e01;
+	margin-top: 3.32rem;
+	margin-bottom: 2rem;
+}
+
+.bsn_text{
+	font-size: 1.375rem;
+	color: #666;
+	margin-top: 3.32rem;
+}
+
+.sell_row .table th,.sell_row .table td{
+	text-align: center;
+}
+
+.order_row{
+	height: 29.25rem;
+}
+
+.sell_row{
+	height: 15.625rem;
+	margin-left: 3px;
+}
+
+.sell_row tr td,.sell_row tr th{
+	width: 8.57rem;
+}
+
+.sell_row tr td{
+	font-weight: normal;
+	font-size: 1.25rem;
+}
+
+.bsn_detail{
+	border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-o-border-radius: 3px;
+		-ms-border-radius: 3px;
+	font-size: 1.25rem;
+	height: 1.785rem;
+}
+
+.detail_row th,.detail_row td{
+	font-size: 1.375rem;
+}
+
+.pagination>li>a {
+	color: #666;
+}
+
+.pagination>li.active>a, .pagination>li.active>a:hover{
+	color: #666;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.pagination>.active>a{
+	color: #666;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+@media only screen and (max-width:1376px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    html{
+        font-size: 62.5%;
+    }
+}

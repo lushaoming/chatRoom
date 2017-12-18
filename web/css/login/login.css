@@ -1,0 +1,344 @@
+html{
+    /*font-size: 100%;*/
+}
+
+body{
+    font-size: 100%;
+    padding: 0;
+    margin:0 auto;
+    background:url(../../images/login_bg.jpg);
+    overflow-y: scroll;
+}
+
+input:-webkit-autofill{
+    background-color: #f9f9f9 !important;
+    box-shadow : 0 0 0px 1000px #f9f9f9 inset ;
+    -webkit-box-shadow : 0 0 0px #f9f9f9 inset;
+}
+/*input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background: #f9f9f9 !important;
+}*/
+
+.inline-element{
+    display: inline-block;
+}
+
+.content{
+    width:100%;
+    /*height: 100%;*/
+    /*height: 28.875rem; */
+}
+
+.login-content{
+    margin: 0 auto;
+    height: 28.875rem; 
+    width: 40.76rem !important;
+    /*position: absolute; *//*脱离文档流*/
+    /*top: 100px;*/
+}
+.login_left{
+    display: inline-block;
+    width: 16.1256rem;
+    height: 28.875rem;
+    background-color: #f9f9f9;
+    border-top-left-radius:3px;
+        -webkit-border-top-left-radius:3px;
+        -moz-border-top-left-radius:3px;
+        -ms-border-top-left-radius:3px;
+        -o-border-top-left-radius:3px;
+    border-bottom-left-radius: 3px;
+        -webkit-border-bottom-left-radius:3px;
+        -moz-border-bottom-left-radius:3px;
+        -ms-border-bottom-left-radius:3px;
+        -o-border-bottom-left-radius:3px;
+}
+
+.login_left img{
+    display: block;
+    padding-top: 7.8rem;
+    padding-left:0.875rem;
+    width: 90%;
+}
+
+.login_form{
+    display: inline-block;
+    width: 24.625rem;
+    height: 28.875rem;
+    background-color: #3e3c31;
+    border-top-right-radius:3px;
+        -webkit-border-top-right-radius:3px;
+        -moz-border-top-right-radius:3px;
+        -ms-border-top-right-radius:3px;
+        -o-border-top-right-radius:3px;
+    border-bottom-right-radius: 3px;
+        -webkit-border-bottom-right-radius:3px;
+        -moz-border-bottom-right-radius:3px;
+        -ms-border-bottom-right-radius:3px;
+        -o-border-bottom-right-radius:3px;
+}
+.login_form h2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /*margin-bottom: 4rem;*/
+    padding-left: 5.25rem;
+    font-family:'Microsoft YaHei';
+    font-size: 2.375rem;
+    color: #37a88f;
+}
+
+.result{
+    position: absolute;
+    top: -25px;
+    left: 17px;
+    font-family:'Microsoft YaHei';
+    font-size: 13px;
+    color: #f89e01;
+}
+
+#register{
+    position: relative;
+}
+
+#register #userName{
+    box-sizing: border-box;
+    margin-left: 0.94rem;
+    width: 22.875rem;
+    height: 2.75rem;
+    background-color: #f9f9f9;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 14px;
+    /*color: #999;*/
+    color: #333;
+    border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        -moz-border-radius: 3px !important;
+        -ms-border-radius: 3px !important;
+        -o-border-radius: 3px !important;
+}
+
+#register .form-group .input-group{
+    width: 22.875rem;
+    margin-left: 0.94rem;
+}
+#register .form-group #userPsw{
+    border: none;
+    box-sizing: border-box;
+    height: 2.75rem;
+    background-color: #f9f9f9;
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 14px;
+    color: #333;
+    border-top-left-radius: 3px !important;
+        -webkit-border-top-left-radius: 3px !important;
+        -moz-border-top-left-radius: 3px !important;
+        -ms-border-top-left-radius: 3px !important;
+        -o-border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+        -webkit-border-bottom-left-radius: 3px !important;
+        -moz-border-bottom-left-radius: 3px !important;
+        -ms-border-bottom-left-radius: 3px !important;
+        -o-border-bottom-left-radius: 3px !important;
+}
+
+#register .form-group .login_addon{
+    background-color: #f9f9f9;
+    border-top-right-radius: 3px !important;
+        -webkit-border-top-right-radius: 3px !important;
+        -moz-border-top-right-radius: 3px !important;
+        -ms-border-top-right-radius: 3px !important;
+        -o-border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+        -webkit-border-bottom-right-radius: 3px !important;
+        -moz-border-bottom-right-radius: 3px !important;
+        -ms-border-bottom-right-radius: 3px !important;
+        -o-border-bottom-right-radius: 3px !important;
+}
+
+#register .form-group #userCode{
+    display:initial;
+    width:50%;
+    margin-top: 0;
+    margin-right:0.85rem;
+    font-size: 14px; 
+    height: 2.75rem;
+    background-color: #f9f9f9;
+    font-family: "Microsoft YaHei UI Light";
+    color: #333;
+    outline: none !important;
+    border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        -moz-border-radius: 3px !important;
+        -ms-border-radius: 3px !important;
+        -o-border-radius: 3px !important;
+}
+
+#register .form-group .img_code{
+    width: 6.57rem;
+    height: 2.75rem;
+    display: inline-block;
+    /*margin-bottom:5px;*/
+    margin-top:-15px/9;
+    margin-top: -2px !important;
+}
+
+#register .form-group .change_code{
+    color: #fff;
+    font-size: 1rem;
+    vertical-align: bottom;
+}
+
+.sumbit_btn{
+    border: none;
+    border-radius: 3px;
+    margin-left: 0.94rem;
+    height: 3.125rem;
+    width: 22.875rem;
+    background-color: #37a88f;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 1.75rem;
+    color: #fefffe;
+}
+
+.forget_psw{
+    color: #f89b01;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-left: 0.94rem;
+    margin-bottom: 1.25rem;
+}
+.tip_psw{
+    color: #f89b01;
+    font-size: 1rem;
+    margin-left: 0.94rem;
+}
+
+.tip_left_psw{
+    color: #f89b01;
+    font-size: 1rem;
+    margin-left: 3.94rem;
+    margin-top: 5px;
+}
+
+.input_img{
+    display: inline-block;
+    width: 1.625rem;
+    height: 2rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+#pswPhone,#pswNew{
+    width: 19.57rem;
+    /*padding: 1.625rem 0 1.625rem 0.5rem;*/
+    height: 2.75rem;
+    border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        -moz-border-radius: 3px !important;
+        -ms-border-radius: 3px !important;
+        -o-border-radius: 3px !important;
+}
+
+#pswCode{
+    width:12.82rem;
+    /*padding: 1.625rem 0 1.625rem 0.5rem;*/
+    height: 2.75rem;
+    border-right:none;
+    border-top-left-radius: 3px !important;
+        -webkit-border-top-left-radius: 3px !important;
+        -moz-border-top-left-radius: 3px !important;
+        -ms-border-top-left-radius: 3px !important;
+        -o-border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+        -webkit-border-bottom-left-radius: 3px !important;
+        -moz-border-bottom-left-radius: 3px !important;
+        -ms-border-bottom-left-radius: 3px !important;
+        -o-border-bottom-left-radius: 3px !important;
+}
+
+#pswSumbit{
+   margin-top: 1.25rem;
+}
+
+#psw .input-group-addon{
+    background: #3e3c31;
+    border:none;padding:0 0;
+}
+
+#psw .form-group{
+    /*margin-top:1.25rem;*/
+}
+
+.psw-group{
+    margin-top:1.25rem;
+    margin-bottom: 1.25rem !important;
+}
+
+.code-group{
+    margin-left: 0.94rem;
+    margin-bottom: 1.25rem;
+    margin-bottom: 0.625rem/9;
+}
+
+.psw_addon{
+    background: #fff !important;
+    width: 6.75rem;
+    vertical-align: inherit;
+    border-color: #fff;
+    /*padding: 1.125rem 0 1.4rem 0.5rem;*/
+    height: 2.75rem;
+}
+
+.addon-btn{
+    border:1px solid #999; 
+    margin:5px;
+    line-height: 2rem;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+    border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        -moz-border-radius: 3px !important;
+        -ms-border-radius: 3px !important;
+        -o-border-radius: 3px !important;
+}
+
+.addon-btn-lg{
+    font-size: 1.125rem;
+}
+
+@media only screen and (max-width:1376px) {
+   /* html{
+        font-size: 75%;
+    }*/
+   /* body{
+        font-size: 75%;
+    }*/
+   /* .login-content{
+        margin:3.75rem auto 0 auto;
+    }*/
+}
+
+@media only screen and (max-width:1024px){
+   /* html{
+        font-size: 63%;
+    }*/
+   /* body{
+        font-size: 63%;
+    }*/
+  /*  .login-content{
+        margin:4.75rem auto 0 auto;
+    }*/
+}
+
+@media only screen and (max-width:991px){
+    /*html{
+        font-size: 60%;
+    }
+    body{
+        font-size: 60%;
+    }*/
+   /* .login-content{
+        margin:4.75rem auto 0 auto;
+    }*/
+}

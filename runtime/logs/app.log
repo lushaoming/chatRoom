@@ -1,0 +1,748 @@
+2017-12-04 09:31:32 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'file_get_contents(http://test.scau-info.me/scau_info/oauth/v1/web/token/get-token?app_id=123456&amp;app_secret=965EB72C92A549D): failed to open stream: HTTP request failed! ' in C:\AppServ\www\chat\controllers\OauthController.php:23
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\AppServ\\www\\...', 23, Array)
+#1 C:\AppServ\www\chat\controllers\OauthController.php(23): file_get_contents('http://test.sca...')
+#2 [internal function]: app\controllers\OauthController->actionIndex()
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#5 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('oauth/index', Array)
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-12-04 09:30:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://test.scau-info.me/scau_info/oauth/v1/web/open/index?app_id=123456&redirect_uri=http://test.scau-info.me/chat/web/index.php?r=oauth/index&response_type=code'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '60895'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512351013.024
+    'REQUEST_TIME' => 1512351013
+]
+2017-12-04 09:34:16 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\CurlService' not found' in C:\AppServ\www\chat\controllers\OauthController.php:23
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-04 09:34:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '61217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512351256.034
+    'REQUEST_TIME' => 1512351256
+]
+2017-12-04 09:34:28 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'BaseService' not found' in C:\AppServ\www\chat\service\CurlService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-04 09:34:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '61236'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512351268.242
+    'REQUEST_TIME' => 1512351268
+]
+2017-12-04 09:36:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'json_decode() expects parameter 1 to be string, array given' in C:\AppServ\www\chat\controllers\OauthController.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', 'C:\\AppServ\\www\\...', 25, Array)
+#1 C:\AppServ\www\chat\controllers\OauthController.php(25): json_decode(Array, true)
+#2 [internal function]: app\controllers\OauthController->actionIndex()
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#5 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('oauth/index', Array)
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-12-04 09:36:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '61674'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512351410.693
+    'REQUEST_TIME' => 1512351410
+]
+2017-12-04 09:37:33 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'json_decode() expects parameter 1 to be string, array given' in C:\AppServ\www\chat\controllers\OauthController.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', 'C:\\AppServ\\www\\...', 25, Array)
+#1 C:\AppServ\www\chat\controllers\OauthController.php(25): json_decode(Array, true)
+#2 [internal function]: app\controllers\OauthController->actionIndex()
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#5 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('oauth/index', Array)
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-12-04 09:37:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '61738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512351453.187
+    'REQUEST_TIME' => 1512351453
+]
+2017-12-04 09:37:56 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'json_decode() expects parameter 1 to be string, array given' in C:\AppServ\www\chat\controllers\OauthController.php:30
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'json_decode() e...', 'C:\\AppServ\\www\\...', 30, Array)
+#1 C:\AppServ\www\chat\controllers\OauthController.php(30): json_decode(Array, true)
+#2 [internal function]: app\controllers\OauthController->actionIndex()
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#5 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('oauth/index', Array)
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-12-04 09:37:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '61772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512351475.832
+    'REQUEST_TIME' => 1512351475
+]
+2017-12-04 09:58:20 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method app\service\CurlService::curl_getcurl_get()' in C:\AppServ\www\chat\controllers\OauthController.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-04 09:58:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '64619'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512352700.629
+    'REQUEST_TIME' => 1512352700
+]
+2017-12-04 10:34:21 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'stream_socket_client(): ' in C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php:834
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'stream_socket_c...', 'C:\\AppServ\\www\\...', 834, Array)
+#1 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(834): stream_socket_client('tcp://127.0.0.1...', '<span class="nu...', '<span class="st...', 3)
+#2 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(356): yii\web\Gateway::getAllGatewayAddressesFromRegister()
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(311): yii\web\Gateway::getBufferFromAllGateway(Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(175): yii\web\Gateway::getClientIdByUid(0)
+#5 C:\AppServ\www\chat\controllers\IndexController.php(86): yii\web\Gateway::isUidOnline(0)
+#6 [internal function]: app\controllers\IndexController->actionIndex()
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#9 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#11 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-04 10:34:20 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+    'PHPSESSID' => '87agi2m0eoiphnp2h5abnftvv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user_id' => '50'
+    'username' => 'çˆ±åšèœçš„ç¨‹åºå‘˜'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://test.scau-info.me/scau_info/oauth/v1/web/open/index?app_id=123456&redirect_uri=http://test.scau-info.me/chat/web/index.php?r=oauth/index&response_type=code'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D; PHPSESSID=87agi2m0eoiphnp2h5abnftvv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '51443'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/chat/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512354860.051
+    'REQUEST_TIME' => 1512354860
+]
+2017-12-04 10:40:58 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 120 seconds exceeded' in C:\AppServ\www\chat\service\CurlService.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-04 10:34:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'oauth/index'
+    'openid' => 'OPENID133619AAB5CB97A0FA61503AD8F0F475'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+    'PHPSESSID' => '87agi2m0eoiphnp2h5abnftvv7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://test.scau-info.me/scau_info/oauth/v1/web/open/index?app_id=123456&redirect_uri=http://test.scau-info.me/chat/web/index.php?r=oauth/index&response_type=code'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D; PHPSESSID=87agi2m0eoiphnp2h5abnftvv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '51495'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'REQUEST_URI' => '/chat/web/index.php?r=oauth/index&openid=OPENID133619AAB5CB97A0FA61503AD8F0F475'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512354883.188
+    'REQUEST_TIME' => 1512354883
+]
+2017-12-04 11:46:32 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'stream_socket_client(): ' in C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php:747
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'stream_socket_c...', 'C:\\AppServ\\www\\...', 747, Array)
+#1 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(747): stream_socket_client('tcp://127.0.0.1...', 10061, '\xD3\xC9\xD3\xDA\xC4\xBF\xB1\xEA\xBC\xC6\xCB\xE3\xBB\xFA\xBB...', 3, 4)
+#2 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(726): yii\web\Gateway::sendBufferToGateway('127.0.0.1:2903', '\x00\x00\x00\x1E\f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...')
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(661): yii\web\Gateway::sendToGateway('127.0.0.1:2903', Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(451): yii\web\Gateway::sendCmdAndMessageToClient('7f0000010b57000...', 12, '', '50')
+#5 C:\AppServ\www\chat\controllers\IndexController.php(106): yii\web\Gateway::bindUid('7f0000010b57000...', '50')
+#6 [internal function]: app\controllers\IndexController->actionBind()
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#9 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('bind', Array)
+#10 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/bind', Array)
+#11 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-04 11:46:31 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][info][application] $_GET = [
+    'r' => 'index/bind'
+]
+
+$_POST = [
+    'client_id' => '7f0000010b5700000003'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+    'PHPSESSID' => '87agi2m0eoiphnp2h5abnftvv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user_id' => '50'
+    'username' => 'çˆ±åšèœçš„ç¨‹åºå‘˜'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '30'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://test.scau-info.me'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://test.scau-info.me/chat/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D; PHPSESSID=87agi2m0eoiphnp2h5abnftvv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '64478'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=index/bind'
+    'REQUEST_URI' => '/chat/web/index.php?r=index/bind'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512359191.15
+    'REQUEST_TIME' => 1512359191
+]
+2017-12-04 14:23:25 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'stream_socket_client(): ' in C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php:747
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'stream_socket_c...', 'C:\\AppServ\\www\\...', 747, Array)
+#1 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(747): stream_socket_client('tcp://127.0.0.1...', 10061, '\xD3\xC9\xD3\xDA\xC4\xBF\xB1\xEA\xBC\xC6\xCB\xE3\xBB\xFA\xBB...', 3, 4)
+#2 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(726): yii\web\Gateway::sendBufferToGateway('127.0.0.1:2903', '\x00\x00\x00\x1E\f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...')
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(661): yii\web\Gateway::sendToGateway('127.0.0.1:2903', Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(451): yii\web\Gateway::sendCmdAndMessageToClient('7f0000010b57000...', 12, '', '50')
+#5 C:\AppServ\www\chat\controllers\IndexController.php(106): yii\web\Gateway::bindUid('7f0000010b57000...', '50')
+#6 [internal function]: app\controllers\IndexController->actionBind()
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#9 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('bind', Array)
+#10 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/bind', Array)
+#11 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-04 14:23:24 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][info][application] $_GET = [
+    'r' => 'index/bind'
+]
+
+$_POST = [
+    'client_id' => '7f0000010b5700000002'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+    'PHPSESSID' => '87agi2m0eoiphnp2h5abnftvv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user_id' => '50'
+    'username' => 'çˆ±åšèœçš„ç¨‹åºå‘˜'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '30'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://test.scau-info.me'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://test.scau-info.me/chat/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D; PHPSESSID=87agi2m0eoiphnp2h5abnftvv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '51185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=index/bind'
+    'REQUEST_URI' => '/chat/web/index.php?r=index/bind'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512368604.337
+    'REQUEST_TIME' => 1512368604
+]
+2017-12-04 16:48:20 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'stream_socket_client(): ' in C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php:747
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'stream_socket_c...', 'C:\\AppServ\\www\\...', 747, Array)
+#1 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(747): stream_socket_client('tcp://127.0.0.1...', 10061, '\xD3\xC9\xD3\xDA\xC4\xBF\xB1\xEA\xBC\xC6\xCB\xE3\xBB\xFA\xBB...', 3, 4)
+#2 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(726): yii\web\Gateway::sendBufferToGateway('127.0.0.1:2903', '\x00\x00\x00\x1E\f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...')
+#3 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(661): yii\web\Gateway::sendToGateway('127.0.0.1:2903', Array)
+#4 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Gateway.php(451): yii\web\Gateway::sendCmdAndMessageToClient('7f0000010b57000...', 12, '', '50')
+#5 C:\AppServ\www\chat\controllers\IndexController.php(106): yii\web\Gateway::bindUid('7f0000010b57000...', '50')
+#6 [internal function]: app\controllers\IndexController->actionBind()
+#7 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Controller.php(158): yii\base\InlineAction->runWithParams(Array)
+#9 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('bind', Array)
+#10 C:\AppServ\www\chat\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/bind', Array)
+#11 C:\AppServ\www\chat\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\AppServ\www\chat\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-04 16:48:19 [127.0.0.1][-][87agi2m0eoiphnp2h5abnftvv7][info][application] $_GET = [
+    'r' => 'index/bind'
+]
+
+$_POST = [
+    'client_id' => '7f0000010b5700000003'
+]
+
+$_COOKIE = [
+    '_csrf' => '183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"÷kû×[t1n»ôÙ7bBŽy¦gçQ>Ïã\\&ö¼\";}'
+    'PHPSESSID' => '87agi2m0eoiphnp2h5abnftvv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user_id' => '50'
+    'username' => 'çˆ±åšèœçš„ç¨‹åºå‘˜'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'test.scau-info.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '30'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://test.scau-info.me'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://test.scau-info.me/chat/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=183fcdc78f36c2449b5df8dd2023c82b5f96e25c806ed4c63b313f54b690ecc4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1F%F7k%10%FB%D7%5Bt1n%BB%8D%16%F4%D97bB%8Ey%81%A6g%E7Q%3E%CF%E3%5C%26%F6%BC%22%3B%7D; PHPSESSID=87agi2m0eoiphnp2h5abnftvv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Common Files\\microsoft shared\\TigerKin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.6.17'
+    'SERVER_NAME' => 'test.scau-info.me'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/AppServ/www/'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'SCRIPT_FILENAME' => 'C:/AppServ/www/chat/web/index.php'
+    'REMOTE_PORT' => '64245'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=index/bind'
+    'REQUEST_URI' => '/chat/web/index.php?r=index/bind'
+    'SCRIPT_NAME' => '/chat/web/index.php'
+    'PHP_SELF' => '/chat/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512377299.386
+    'REQUEST_TIME' => 1512377299
+]
